@@ -1,4 +1,4 @@
-h2 {
+h1 {
     font-size: 100px;
     font-family: raleway;
     text-align: center;
@@ -23,13 +23,21 @@ body {
     background-color: #bbbbbb;
 }
 
+img{
+
+    border: 2px solid white;
+    border-radius: 10px;
+    
+
+}
+
 p {
     line-height: 2em;
 }
 
 a:link{
     color: rgb(238, 238, 238);
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:visited{
@@ -38,4 +46,74 @@ a:visited{
 
 a:hover{
     color: rgb(255, 255, 255)
+}
+
+.highlight{
+    background-color: yellow;
+    color: black;
+    padding: 2px;
+    border-radius: 3px; 
+    font-weight: bold;
+}
+
+#specialcont{
+    background-color: rgb(167, 167, 167);
+}
+
+#sidebar{
+    color: white;
+    background-color: #000000;
+    width: 225px;
+    float:right;
+    border: 2px solid white;
+    margin: 15px;
+    margin-top: 80px;
+    line-height: 2.25em;
+}
+
+#sidebar h3{
+    padding: 5px;
+    width: 200px;
+    background: none;
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin: 5px;
+    border: none;
+}
+
+#container{
+    width:1100px;
+    margin:0 auto;
+    background-color: rgb(155, 155, 155);
+    padding: 30px 60px;
+    border-left: 5px double white;
+    border-right: 5px double white;
+}
+
+@media (max-width: 1200px){
+    #container{
+        width: 800px;
+    }
+}
+
+@media (max-width: 992px){
+    #container{
+        width: 100%;
+    }
+    #container, p{
+        margin:0;
+        padding: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 768px){
+    #sidebar{
+        display: none;
+    }
+    img{
+        float:none;
+        border: none;
+        width: 100%;
+    }
 }
