@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 h1 {
     font-size: 100px;
     font-family: raleway;
     text-align: center;
     font-weight: 100;
-    margin-top: 40px;
+    margin-top: 0px;
+    
     margin-bottom: 0px;
 }
 
